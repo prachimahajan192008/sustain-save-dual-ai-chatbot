@@ -1,0 +1,250 @@
+{
+  "entities": {
+    "AdminRecord": {
+      "title": "AdminRecord",
+      "description": "Trusted administrator lookup record.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "email": { "type": "string", "minLength": 3, "maxLength": 180 },
+        "grantedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email", "grantedAt"]
+    },
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Public/workspace role profile for Sustain & Save users.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "displayName": { "type": "string", "minLength": 1, "maxLength": 120 },
+        "role": { "type": "string", "enum": ["SUPER_ADMIN", "CRM_ADMIN", "CRM_EMPLOYEE", "WEBSITE_VISITOR"] },
+        "department": { "type": "string", "maxLength": 80 },
+        "status": { "type": "string", "enum": ["active", "suspended"] },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "displayName", "role", "status", "createdAt", "updatedAt"]
+    },
+    "UserPrivateInfo": {
+      "title": "UserPrivateInfo",
+      "description": "Isolated PII record for user email and contact details.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "email": { "type": "string", "minLength": 3, "maxLength": 180 },
+        "phone": { "type": "string", "maxLength": 30 },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email", "updatedAt"]
+    },
+    "Conversation": {
+      "title": "Conversation",
+      "description": "Metadata for a Website or CRM AI chatbot conversation.",
+      "type": "object",
+      "properties": {
+        "ownerId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "botType": { "type": "string", "enum": ["website", "crm"] },
+        "title": { "type": "string", "minLength": 1, "maxLength": 160 },
+        "status": { "type": "string", "enum": ["active", "escalated", "resolved"] },
+        "unansweredCount": { "type": "number" },
+        "messageCount": { "type": "number" },
+        "lastMessagePreview": { "type": "string", "maxLength": 300 },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["ownerId", "botType", "title", "status", "unansweredCount", "messageCount", "createdAt", "updatedAt"]
+    },
+    "ChatMessage": {
+      "title": "ChatMessage",
+      "description": "Individual message inside a conversation subcollection.",
+      "type": "object",
+      "properties": {
+        "ownerId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "sender": { "type": "string", "enum": ["user", "assistant"] },
+        "text": { "type": "string", "minLength": 1, "maxLength": 12000 },
+        "escalated": { "type": "boolean" },
+        "feedback": { "type": "string", "enum": ["none", "up", "down"] },
+        "sourceRefs": { "type": "string", "maxLength": 1000 },
+        "hasChart": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["ownerId", "sender", "text", "escalated", "feedback", "createdAt"]
+    },
+    "KnowledgeDocument": {
+      "title": "KnowledgeDocument",
+      "description": "Knowledge base document for either Website Bot or CRM Bot.",
+      "type": "object",
+      "properties": {
+        "botType": { "type": "string", "enum": ["website", "crm"] },
+        "title": { "type": "string", "minLength": 1, "maxLength": 180 },
+        "category": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "sourceType": { "type": "string", "enum": ["pdf", "docx", "txt", "custom"] },
+        "content": { "type": "string", "minLength": 1, "maxLength": 80000 },
+        "chunkCount": { "type": "number" },
+        "active": { "type": "boolean" },
+        "processingStatus": { "type": "string", "enum": ["indexed", "processing", "disabled"] },
+        "createdBy": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["botType", "title", "category", "sourceType", "content", "chunkCount", "active", "processingStatus", "createdBy", "createdAt", "updatedAt"]
+    },
+    "TrainingQuestion": {
+      "title": "TrainingQuestion",
+      "description": "Administrator-approved Q&A training pair for either bot.",
+      "type": "object",
+      "properties": {
+        "botType": { "type": "string", "enum": ["website", "crm"] },
+        "category": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "question": { "type": "string", "minLength": 2, "maxLength": 500 },
+        "answer": { "type": "string", "minLength": 2, "maxLength": 4000 },
+        "intent": { "type": "string", "maxLength": 80 },
+        "active": { "type": "boolean" },
+        "createdBy": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["botType", "category", "question", "answer", "active", "createdBy", "createdAt", "updatedAt"]
+    },
+    "TrainingCategory": {
+      "title": "TrainingCategory",
+      "description": "Categorization taxonomy for knowledge and Q&A training.",
+      "type": "object",
+      "properties": {
+        "botType": { "type": "string", "enum": ["website", "crm"] },
+        "name": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "description": { "type": "string", "maxLength": 300 },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["botType", "name", "createdAt"]
+    },
+    "EscalationTicket": {
+      "title": "EscalationTicket",
+      "description": "Unanswered or user-escalated query handed off to Support.",
+      "type": "object",
+      "properties": {
+        "ownerId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "botType": { "type": "string", "enum": ["website", "crm"] },
+        "conversationId": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "question": { "type": "string", "minLength": 1, "maxLength": 1000 },
+        "channel": { "type": "string", "enum": ["auto", "call", "whatsapp", "email"] },
+        "status": { "type": "string", "enum": ["open", "in_review", "resolved"] },
+        "notes": { "type": "string", "maxLength": 1000 },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["ownerId", "botType", "conversationId", "question", "channel", "status", "createdAt", "updatedAt"]
+    },
+    "BotConfig": {
+      "title": "BotConfig",
+      "description": "Independent configuration for Website Bot or CRM Bot.",
+      "type": "object",
+      "properties": {
+        "botType": { "type": "string", "enum": ["website", "crm"] },
+        "botName": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "welcomeMessage": { "type": "string", "minLength": 1, "maxLength": 600 },
+        "systemInstructions": { "type": "string", "minLength": 1, "maxLength": 4000 },
+        "model": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "temperature": { "type": "number" },
+        "maxResponseLength": { "type": "number" },
+        "knowledgeBaseId": { "type": "string", "maxLength": 80 },
+        "crmDataMode": { "type": "string", "enum": ["demo_ro", "production_ro"] },
+        "enabled": { "type": "boolean" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["botType", "botName", "welcomeMessage", "systemInstructions", "model", "temperature", "maxResponseLength", "enabled", "updatedAt"]
+    },
+    "SupportConfig": {
+      "title": "SupportConfig",
+      "description": "Official support and NMD Pvt Ltd escalation contact settings.",
+      "type": "object",
+      "properties": {
+        "companyName": { "type": "string", "minLength": 1, "maxLength": 120 },
+        "supportPhone": { "type": "string", "minLength": 6, "maxLength": 30 },
+        "whatsappNumber": { "type": "string", "minLength": 6, "maxLength": 30 },
+        "supportEmail": { "type": "string", "minLength": 3, "maxLength": 160 },
+        "headOffice": { "type": "string", "maxLength": 300 },
+        "branchOffice": { "type": "string", "maxLength": 300 },
+        "contactUrl": { "type": "string", "maxLength": 250 },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["companyName", "supportPhone", "whatsappNumber", "supportEmail", "updatedAt"]
+    },
+    "AuditLog": {
+      "title": "AuditLog",
+      "description": "Immutable administrative and security audit log entry.",
+      "type": "object",
+      "properties": {
+        "actorUid": { "type": "string", "minLength": 1, "maxLength": 128, "pattern": "^[a-zA-Z0-9_\\-]+$" },
+        "action": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "target": { "type": "string", "minLength": 1, "maxLength": 180 },
+        "detail": { "type": "string", "maxLength": 600 },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["actorUid", "action", "target", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/admins/{uid}": {
+      "schema": { "$ref": "#/entities/AdminRecord" },
+      "description": "Super Admin role lookup records."
+    },
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/UserProfile" },
+      "description": "User workspace profiles and RBAC role assignments."
+    },
+    "/users/{userId}/private/{docId}": {
+      "schema": { "$ref": "#/entities/UserPrivateInfo" },
+      "description": "Isolated PII for user accounts."
+    },
+    "/website_conversations/{conversationId}": {
+      "schema": { "$ref": "#/entities/Conversation" },
+      "description": "Public website chatbot conversation threads."
+    },
+    "/website_conversations/{conversationId}/website_messages/{messageId}": {
+      "schema": { "$ref": "#/entities/ChatMessage" },
+      "description": "Messages inside a website chatbot conversation."
+    },
+    "/crm_conversations/{conversationId}": {
+      "schema": { "$ref": "#/entities/Conversation" },
+      "description": "Internal CRM chatbot conversation threads."
+    },
+    "/crm_conversations/{conversationId}/crm_messages/{messageId}": {
+      "schema": { "$ref": "#/entities/ChatMessage" },
+      "description": "Messages inside a CRM chatbot conversation."
+    },
+    "/website_knowledge_base/{docId}": {
+      "schema": { "$ref": "#/entities/KnowledgeDocument" },
+      "description": "Knowledge base documents exclusively for Website Bot."
+    },
+    "/crm_knowledge_base/{docId}": {
+      "schema": { "$ref": "#/entities/KnowledgeDocument" },
+      "description": "Knowledge base documents exclusively for CRM Bot."
+    },
+    "/training_questions/{questionId}": {
+      "schema": { "$ref": "#/entities/TrainingQuestion" },
+      "description": "Approved Q&A training pairs tagged by botType."
+    },
+    "/training_categories/{categoryId}": {
+      "schema": { "$ref": "#/entities/TrainingCategory" },
+      "description": "Categories for organizing training questions and documents."
+    },
+    "/escalations/{escalationId}": {
+      "schema": { "$ref": "#/entities/EscalationTicket" },
+      "description": "Escalated support inquiries and handoff logs."
+    },
+    "/bot_settings/{botId}": {
+      "schema": { "$ref": "#/entities/BotConfig" },
+      "description": "Independent configuration documents for website and crm bots."
+    },
+    "/support_settings/{settingId}": {
+      "schema": { "$ref": "#/entities/SupportConfig" },
+      "description": "NMD Pvt Ltd / Sustain & Save support contact details."
+    },
+    "/audit_logs/{logId}": {
+      "schema": { "$ref": "#/entities/AuditLog" },
+      "description": "Immutable security and administrative audit logs."
+    }
+  }
+}

@@ -1,0 +1,1696 @@
+{
+  "supportConfig": {
+    "companyName": "NMD Pvt Ltd · Sustain & Save Support",
+    "supportPhone": "+91 8830498811",
+    "whatsappNumber": "918830498811",
+    "supportEmail": "nmdpvtltd@gmail.com",
+    "headOffice": "Office No.11, Second Floor, NMD PVT LTD, Aditya Centeegra, Fergusson College Rd, Shivajinagar, Pune, Maharashtra 411004",
+    "branchOffice": "Office No.202, Mantri House, Fergusson College Rd, Shivajinagar, Pune, Maharashtra 411005",
+    "contactUrl": "https://thedigitalnmd.com/contact",
+    "updatedAt": "2026-11-24T09:00:00.000Z"
+  },
+  "botConfigs": {
+    "website": {
+      "botType": "website",
+      "botName": "Sustain & Save Assistant",
+      "welcomeMessage": "Welcome to Sustain & Save! Ask me about our energy monitoring hardware, sustainability programs, business policies, pricing, or support.",
+      "systemInstructions": "You are the official Sustain & Save Website AI Assistant. Answer strictly using the approved Website Knowledge Base and approved Website Q&A training pairs provided in context. Never guess, never invent prices or policies, and never mention internal CRM records. If the context does not answer the question, explicitly state that you need to connect the visitor with Support.",
+      "model": "gemini-4-hydrogen",
+      "temperature": 0.2,
+      "maxResponseLength": 900,
+      "knowledgeBaseId": "website_kb_primary",
+      "enabled": true,
+      "suggestedQuestions": [
+        "What does Sustain & Save do?",
+        "Compare your sustainability plans and savings",
+        "What is your EM-100 hardware warranty and SLA?",
+        "How can I contact NMD Pvt Ltd support?"
+      ],
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    "crm": {
+      "botType": "crm",
+      "botName": "Sustain & Save CRM Copilot",
+      "welcomeMessage": "Welcome to the internal CRM AI Assistant. Ask read-only questions about leads, customers, follow-ups, support tickets, SOPs, or CRM workflows.",
+      "systemInstructions": "You are the internal Sustain & Save CRM AI Assistant. You operate in strict READ-ONLY mode. Only cite numbers returned by the verified CRM data query or retrieved CRM SOP documents. Never invent statistics, never modify or delete records, and never expose private CRM data externally.",
+      "model": "gemini-4-hydrogen",
+      "temperature": 0.1,
+      "maxResponseLength": 1200,
+      "knowledgeBaseId": "crm_kb_primary",
+      "crmDataMode": "demo_ro",
+      "enabled": true,
+      "suggestedQuestions": [
+        "Show this month's leads by source.",
+        "How many customers registered this month?",
+        "Which leads require follow-up?",
+        "Show pending support tickets.",
+        "Generate a monthly performance report.",
+        "Explain how to use the Lead Management module."
+      ],
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    }
+  },
+  "websiteDocs": [
+    {
+      "id": "web-doc-001",
+      "botType": "website",
+      "title": "Sustain & Save Company Profile & Offerings",
+      "category": "Company Profile",
+      "sourceType": "custom",
+      "content": "Sustain & Save partners with manufacturing plants, cold-chain facilities, commercial campuses, and healthcare labs across India to cut energy waste and meet ESG targets.\nCore Products & Services:\n1. EM-100 Industrial Energy Monitor: Real-time 3-phase power quality, kWh, and peak-demand telemetry unit with 24-month hardware warranty and automated threshold alerts.\n2. Solar & Power-Quality Audits: On-site engineering assessment identifying harmonic distortion, capacitor bank tuning, and rooftop solar ROI. Typical industrial facilities achieve 12% to 18% electricity savings within 6 months.\n3. Sustainable Packaging & Zero-Waste Advisory: Recyclable corrugated transit packaging conversion and material lifecycle audits.\n4. Automated ESG & BRSR Reporting: Monthly Scope 2 tCO2e emission tracking and ISO 14001 audit-ready PDF exports.\nPlans & Pricing (INR):\n- Starter Energy Audit: ₹69,998/year (1 EM-100 unit, baseline audit, quarterly savings review).\n- Growth Sustainability: ₹1,25,000/year (multi-meter telemetry, automated carbon dashboards, bi-monthly advisory).\n- Enterprise Net-Zero: ₹2,40,000/year (plant-wide IoT metering, ISO 14001 / BRSR exports, dedicated account manager).",
+      "chunkCount": 2,
+      "active": true,
+      "processingStatus": "indexed",
+      "hasEmbeddings": false,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "web-doc-002",
+      "botType": "website",
+      "title": "Support Policy, SLA & NMD Pvt Ltd Contact Directory",
+      "category": "Business Policies",
+      "sourceType": "custom",
+      "content": "Customer Support & Escalation Policy:\n- Support Hours: 24/7 AI Chatbot assistance with live engineering escalation during business hours (Mon–Sat, 9:30 AM – 7:00 PM IST) and emergency telemetry coverage for Enterprise Net-Zero accounts.\n- Onboarding Timeline: Standard EM-100 hardware dispatch and portal provisioning complete within 7 business days of PO confirmation.\n- Warranty & AMC: EM-100 monitors carry a 24-month replacement warranty under active Annual Maintenance Contract (AMC).\n- SLA Response Windows: High priority (plant gateway offline) = 2 hours; Medium priority = 12 hours; Low priority / Portal Access = 24 hours.\nOfficial Support & Implementation Partner (NMD Pvt Ltd):\n- Phone / Call Support: +91 8830498811\n- WhatsApp Support: +91 8830498811\n- Email: nmdpvtltd@gmail.com\n- Contact Portal: https://thedigitalnmd.com/contact\n- Head Office (Pune): Office No.11, Second Floor, NMD PVT LTD, Aditya Centeegra, Fergusson College Rd, Shivajinagar, Pune, Maharashtra 411004\n- Branch Office (Pune): Office No.202, Mantri House, Fergusson College Rd, Shivajinagar, Pune, Maharashtra 411005",
+      "chunkCount": 2,
+      "active": true,
+      "processingStatus": "indexed",
+      "hasEmbeddings": false,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "web-doc-003",
+      "botType": "website",
+      "title": "Dual AI Chatbot Solution Quotation Summary (NMD/QT/2026/103)",
+      "category": "FAQs",
+      "sourceType": "custom",
+      "content": "AI Chatbot Platform Architecture (Quotation NMD/QT/2026/103 by NMD Pvt Ltd):\n- Bot 1 (Website Frontend Bot): Public-facing 24x7 customer assistant trained strictly on approved company content, FAQs, policies, and website documents. Includes Smart Escalation to Call/WhatsApp when a question is outside training.\n- Bot 2 (CRM Backend Bot): Internal employee assistant with Role-Based Access Control (RBAC), read-only live CRM queries, Recharts pie/bar visual reports, and 100 initial training questions.\n- Commercial Summary: Bot Development & Training ₹23,998 one-time (₹11,999 per bot); AI Usage / API Key ₹30,000/year (1M tokens per bot); Annual Maintenance (AMC) ₹16,000/year (₹8,000 per bot). First Year Total Payable: ₹69,998. Yearly Renewal from Year 2: ₹46,000.",
+      "chunkCount": 1,
+      "active": true,
+      "processingStatus": "indexed",
+      "hasEmbeddings": false,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    }
+  ],
+  "crmDocs": [
+    {
+      "id": "crm-doc-001",
+      "botType": "crm",
+      "title": "CRM User Guide — Lead Management & Pipeline Stages",
+      "category": "CRM User Guide",
+      "sourceType": "custom",
+      "content": "Lead Management Module User Guide:\n1. Accessing Leads: Navigate to CRM Workspace > Data Explorer > Leads tab. Records are read-only inside the AI Copilot.\n2. Pipeline Stages: New -> Qualified -> Proposal Sent -> Negotiation -> Won / Lost.\n3. Qualification Rules: Confirm facility energy load, sustainability scope (EM-100, Solar Audit, Net-Zero), decision-maker contact, and target implementation timeline before moving a lead to Qualified.\n4. Response SLA: Inbound Website Chatbot leads must receive outreach within 4 business hours.\n5. Role Scope: CRM Employees view leads assigned to their owner name; CRM Admins and Super Admins view organization-wide pipeline metrics.",
+      "chunkCount": 1,
+      "active": true,
+      "processingStatus": "indexed",
+      "hasEmbeddings": false,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-doc-002",
+      "botType": "crm",
+      "title": "Internal SOP — Customer Follow-Ups & Support Ticket Escalations",
+      "category": "Internal SOPs",
+      "sourceType": "custom",
+      "content": "Follow-Up & Ticket Handling SOP:\n- Daily Follow-Up Cadence: Clear Overdue follow-ups before 11:00 AM IST each day. High-priority follow-ups must never breach 24 hours overdue.\n- Escalation Rule: After 3 unanswered outreach attempts or when a client requests custom commercial terms (>10% discount), escalate to CRM Admin.\n- Ticket SLAs: High priority (Hardware Telemetry outage) = 2h response / 4h triage; Medium priority (ESG Reporting / Billing) = 12h; Low priority (Portal Access) = 24h.\n- Read-Only AI Policy: Bot 2 cannot edit, close, or delete CRM leads, customers, follow-ups, or tickets. All state changes must be performed in the primary CRM system.",
+      "chunkCount": 1,
+      "active": true,
+      "processingStatus": "indexed",
+      "hasEmbeddings": false,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    }
+  ],
+  "trainingQuestions": [
+    {
+      "id": "crm-qa-001",
+      "botType": "crm",
+      "category": "Lead Analytics",
+      "question": "Show this month's leads.",
+      "answer": "Displays all demo leads created in the current month with stage breakdown and bar/trend charts.",
+      "intent": "crm_data_query",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-002",
+      "botType": "crm",
+      "category": "Lead Analytics",
+      "question": "Show leads by source.",
+      "answer": "Aggregates leads across Website Chatbot, LinkedIn, Organic Search, Referral, Trade Expo, and Direct Inquiry with pie and bar charts.",
+      "intent": "crm_data_query",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-003",
+      "botType": "crm",
+      "category": "Lead Analytics",
+      "question": "Show this month's leads by source.",
+      "answer": "Filters current-month leads and plots source-wise distribution in pie and bar charts.",
+      "intent": "crm_data_query",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-004",
+      "botType": "crm",
+      "category": "Lead Analytics",
+      "question": "Which leads require follow-up?",
+      "answer": "Lists leads in New, Qualified, or Proposal Sent stages alongside pending and overdue follow-up tasks.",
+      "intent": "crm_data_query",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-005",
+      "botType": "crm",
+      "category": "Lead Analytics",
+      "question": "How many leads are in Negotiation stage?",
+      "answer": "Queries live read-only lead counts grouped by pipeline stage.",
+      "intent": "crm_data_query",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-006",
+      "botType": "crm",
+      "category": "Lead Analytics",
+      "question": "What is our won pipeline value?",
+      "answer": "Sums estimated INR contract values for all leads currently marked Won in the read-only CRM provider.",
+      "intent": "crm_data_query",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-007",
+      "botType": "crm",
+      "category": "Lead Analytics",
+      "question": "Which source brings the highest lead volume?",
+      "answer": "Ranks acquisition channels by total count and percentage share.",
+      "intent": "crm_data_query",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-008",
+      "botType": "crm",
+      "category": "Lead Analytics",
+      "question": "Show Website Chatbot generated leads.",
+      "answer": "Breaks down leads originating from Bot 1 (Website AI Chatbot) interactions.",
+      "intent": "crm_data_query",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-009",
+      "botType": "crm",
+      "category": "Lead Analytics",
+      "question": "Show qualified leads for this quarter.",
+      "answer": "Summarizes Qualified and Proposal Sent leads across the 3-month pipeline window.",
+      "intent": "crm_data_query",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-010",
+      "botType": "crm",
+      "category": "Lead Analytics",
+      "question": "Can I compare September, October, and November lead trends?",
+      "answer": "Yes, the monthly performance query plots a 3-month line chart of leads versus new customers.",
+      "intent": "crm_data_query",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-011",
+      "botType": "crm",
+      "category": "Lead Management SOP",
+      "question": "Explain how to use the Lead Management module.",
+      "answer": "Open CRM Data Explorer > Leads tab. Filter by status or source, verify lead owner assignment, and schedule an initial discovery follow-up within 24 hours of capture. CRM Bot provides read-only summaries; edits happen in the CRM module.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-012",
+      "botType": "crm",
+      "category": "Lead Management SOP",
+      "question": "What are the standard lead pipeline stages?",
+      "answer": "The 6 approved stages are: New -> Qualified -> Proposal Sent -> Negotiation -> Won / Lost.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-013",
+      "botType": "crm",
+      "category": "Lead Management SOP",
+      "question": "When should a lead be marked Qualified?",
+      "answer": "Mark a lead Qualified once budget, sustainability scope (EM-100, Solar Audit, or Net-Zero Advisory), decision-maker contact, and target timeline are confirmed.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-014",
+      "botType": "crm",
+      "category": "Lead Management SOP",
+      "question": "How quickly must Website Chatbot leads be contacted?",
+      "answer": "Per Sustain & Save SLA, inbound Website Chatbot leads must receive an introductory call or WhatsApp outreach within 4 business hours.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-015",
+      "botType": "crm",
+      "category": "Lead Management SOP",
+      "question": "Who owns Trade Expo leads?",
+      "answer": "Trade Expo leads are distributed round-robin across the 4 regional account owners (Aarav Kulkarni, Sneha Deshmukh, Rohan Joshi, Priya Nair).",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-016",
+      "botType": "crm",
+      "category": "Lead Management SOP",
+      "question": "Can CRM Employees view leads owned by other reps?",
+      "answer": "No. Under Role-Based Access Control, CRM Employees only see leads and follow-ups assigned to their own account, whereas CRM Admins and Super Admins view company-wide totals.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-017",
+      "botType": "crm",
+      "category": "Lead Management SOP",
+      "question": "Can the CRM AI Chatbot delete duplicate leads?",
+      "answer": "No. Bot 2 is strictly read-only and never modifies or deletes CRM records. Flag duplicates to a CRM Admin for merge review.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-018",
+      "botType": "crm",
+      "category": "Lead Management SOP",
+      "question": "What fields are mandatory before moving a lead to Proposal Sent?",
+      "answer": "Company name, contact email/phone, lead source, estimated INR value, and assigned owner must be populated before issuing a formal quotation.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-019",
+      "botType": "crm",
+      "category": "Lead Management SOP",
+      "question": "How is estimated lead value calculated?",
+      "answer": "Use the first-year contract benchmark: Starter Energy Audit (₹69,998+), Growth Sustainability (₹1,25,000+), or Enterprise Net-Zero (₹2,40,000+).",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-020",
+      "botType": "crm",
+      "category": "Lead Management SOP",
+      "question": "What happens when a lead is marked Lost?",
+      "answer": "A loss reason (Budget, Timing, Competitor, Scope Mismatch) must be logged in the CRM notes for quarterly win-loss reviews.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-021",
+      "botType": "crm",
+      "category": "Lead Management SOP",
+      "question": "How do I export a lead report for leadership?",
+      "answer": "Ask Bot 2 for \"Generate a monthly performance report\" or open Analytics & Reports to inspect live tables and charts.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-022",
+      "botType": "crm",
+      "category": "Lead Management SOP",
+      "question": "Are Referral leads prioritized differently?",
+      "answer": "Yes, Referral leads bypass initial cold screening and move directly to Qualified once contact details are verified.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-023",
+      "botType": "crm",
+      "category": "Lead Management SOP",
+      "question": "How do I check overdue lead follow-ups?",
+      "answer": "Ask Bot 2: \"Which leads require follow-up?\" to see pending and overdue tasks sorted by priority.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-024",
+      "botType": "crm",
+      "category": "Lead Management SOP",
+      "question": "What is the minimum qualification score for Enterprise Net-Zero leads?",
+      "answer": "Facilities with >500 kVA sanctioned load or multi-site industrial operations qualify for the Enterprise Net-Zero track.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-025",
+      "botType": "crm",
+      "category": "Lead Management SOP",
+      "question": "How are quotation numbers formatted?",
+      "answer": "Quotations prepared with NMD Pvt Ltd follow the format NMD/QT/YYYY/NNN (for example, NMD/QT/2026/103).",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-026",
+      "botType": "crm",
+      "category": "Customer Analytics",
+      "question": "How many customers registered this month?",
+      "answer": "Queries current-month customer registrations and compares against the 30-account customer registry.",
+      "intent": "crm_data_query",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-027",
+      "botType": "crm",
+      "category": "Customer Analytics",
+      "question": "Summarize customer history.",
+      "answer": "Retrieves active customer accounts, sustainability plans, annual contract values, and recent interaction notes.",
+      "intent": "crm_data_query",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-028",
+      "botType": "crm",
+      "category": "Customer Analytics",
+      "question": "Show customers by sustainability plan.",
+      "answer": "Plots a pie chart of Starter Energy Audit, Growth Sustainability, and Enterprise Net-Zero accounts.",
+      "intent": "crm_data_query",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-029",
+      "botType": "crm",
+      "category": "Customer Analytics",
+      "question": "Show customers by industry.",
+      "answer": "Displays a bar chart across Manufacturing, Cold Chain, Pharmaceuticals, Textiles, Commercial Real Estate, and Hospitality.",
+      "intent": "crm_data_query",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-030",
+      "botType": "crm",
+      "category": "Customer Analytics",
+      "question": "What is the total active annual contract value?",
+      "answer": "Sums the INR annual contract value across all authorized customer records.",
+      "intent": "crm_data_query",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-031",
+      "botType": "crm",
+      "category": "Customer SOP",
+      "question": "How do I prepare for a customer renewal call?",
+      "answer": "Ask Bot 2 to \"Summarize customer history\" to review last interaction notes, open support tickets, and current plan tier before dialing.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-032",
+      "botType": "crm",
+      "category": "Customer SOP",
+      "question": "What is included in the Starter Energy Audit plan?",
+      "answer": "Includes baseline power quality & kWh audit, 1 EM-100 monitor setup, and quarterly savings summary.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-033",
+      "botType": "crm",
+      "category": "Customer SOP",
+      "question": "What is included in the Growth Sustainability plan?",
+      "answer": "Includes multi-meter EM-100 telemetry, automated Scope 2 carbon reports, and bi-monthly advisory reviews.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-034",
+      "botType": "crm",
+      "category": "Customer SOP",
+      "question": "What is included in the Enterprise Net-Zero plan?",
+      "answer": "Includes plant-wide IoT metering, ISO 14001 / BRSR audit exports, dedicated account manager, and custom ERP/CRM integration.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-035",
+      "botType": "crm",
+      "category": "Customer SOP",
+      "question": "How do we onboard a newly won customer?",
+      "answer": "Within 48 hours of Won status: (1) assign Account Manager, (2) schedule kickoff call, (3) ship EM-100 hardware kit, (4) enable customer portal credentials.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-036",
+      "botType": "crm",
+      "category": "Customer SOP",
+      "question": "Where are customer interaction summaries stored?",
+      "answer": "Each customer profile records the latest verified interaction summary and linked follow-up/ticket history.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-037",
+      "botType": "crm",
+      "category": "Customer SOP",
+      "question": "When does Annual Maintenance (AMC) renewal trigger?",
+      "answer": "AMC renewal workflows trigger 45 days prior to the annual anniversary date with an automated reminder follow-up.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-038",
+      "botType": "crm",
+      "category": "Customer SOP",
+      "question": "Can customers request custom ESG PDF templates?",
+      "answer": "Yes, Enterprise Net-Zero customers can request custom BRSR/ISO 14001 PDF layouts via an ESG Reporting support ticket.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-039",
+      "botType": "crm",
+      "category": "Customer SOP",
+      "question": "Who approves commercial discounts on renewals?",
+      "answer": "Discounts above 10% require CRM Admin or Super Admin sign-off in the quotation approval log.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-040",
+      "botType": "crm",
+      "category": "Customer SOP",
+      "question": "How do we handle multi-plant customer accounts?",
+      "answer": "Each plant is registered as a linked unit under the parent customer record so telemetry and billing stay consolidated.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-041",
+      "botType": "crm",
+      "category": "Customer SOP",
+      "question": "What KPIs are reviewed in quarterly business reviews?",
+      "answer": "kWh reduction %, peak demand penalty savings in INR, Scope 2 tCO2e reduction, and ticket SLA adherence.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-042",
+      "botType": "crm",
+      "category": "Customer SOP",
+      "question": "How is customer PII protected inside the CRM?",
+      "answer": "Personal email and phone records are isolated in restricted Firestore subcollections and never exposed to the public website bot.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-043",
+      "botType": "crm",
+      "category": "Customer SOP",
+      "question": "Can Website Bot access customer contract records?",
+      "answer": "Never. Bot 1 (Website) and Bot 2 (CRM) have completely isolated knowledge bases and data permissions.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-044",
+      "botType": "crm",
+      "category": "Customer SOP",
+      "question": "How do I locate a customer account manager?",
+      "answer": "Check the Account Manager column in CRM Data Explorer > Customers or ask Bot 2 for customer details.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-045",
+      "botType": "crm",
+      "category": "Customer SOP",
+      "question": "What is the standard warranty on EM-100 monitors?",
+      "answer": "EM-100 industrial energy monitors carry a 24-month hardware warranty covered under active AMC.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-046",
+      "botType": "crm",
+      "category": "Customer SOP",
+      "question": "How do we upgrade a customer from Starter to Growth?",
+      "answer": "Create a Growth upgrade quotation, obtain PO confirmation, and have a CRM Admin update the plan tier.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-047",
+      "botType": "crm",
+      "category": "Customer SOP",
+      "question": "What triggers an at-risk customer flag?",
+      "answer": "Two or more High-priority open tickets or an unanswered renewal follow-up overdue by more than 7 days.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-048",
+      "botType": "crm",
+      "category": "Customer SOP",
+      "question": "Are demo customer figures real client billing numbers?",
+      "answer": "No. When running in DEMO mode, all 30 customer accounts and INR totals are clearly labeled DEMO DATA.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-049",
+      "botType": "crm",
+      "category": "Customer SOP",
+      "question": "How do I check customers in Cold Chain Logistics?",
+      "answer": "Open CRM Data Explorer > Customers and search \"Cold Chain\", or ask Bot 2 for customer industry distribution.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-050",
+      "botType": "crm",
+      "category": "Customer SOP",
+      "question": "Where do technical support escalations go?",
+      "answer": "Unresolved questions or technical escalations route to NMD Pvt Ltd Support (+91 8830498811 / nmdpvtltd@gmail.com).",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-051",
+      "botType": "crm",
+      "category": "Follow-Up Reports",
+      "question": "Show customer follow-up statistics.",
+      "answer": "Displays Pending, Overdue, and Completed follow-up counts with bar and pie charts.",
+      "intent": "crm_data_query",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-052",
+      "botType": "crm",
+      "category": "Follow-Up Reports",
+      "question": "How many follow-ups are overdue?",
+      "answer": "Filters the follow-up queue for tasks past their scheduled due date.",
+      "intent": "crm_data_query",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-053",
+      "botType": "crm",
+      "category": "Follow-Up SOP",
+      "question": "What is the SLA for High priority follow-ups?",
+      "answer": "High priority follow-ups must be attempted on the same business day and never remain overdue past 24 hours.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-054",
+      "botType": "crm",
+      "category": "Follow-Up SOP",
+      "question": "How should overdue follow-ups be triaged?",
+      "answer": "Start each morning by clearing Overdue items first, logging call outcomes, and rescheduling only with documented customer confirmation.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-055",
+      "botType": "crm",
+      "category": "Follow-Up SOP",
+      "question": "What counts as a completed follow-up?",
+      "answer": "A follow-up is marked Completed only after a two-way call, meeting, or confirmed email/WhatsApp response is logged.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-056",
+      "botType": "crm",
+      "category": "Follow-Up SOP",
+      "question": "When should a follow-up be escalated to a manager?",
+      "answer": "Escalate if 3 consecutive outreach attempts receive no response or a key decision-maker requests contract renegotiation.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-057",
+      "botType": "crm",
+      "category": "Follow-Up SOP",
+      "question": "Can CRM Employees close follow-ups assigned to teammates?",
+      "answer": "No, employees manage only their own assigned follow-up queue unless reassigned by a CRM Admin.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-058",
+      "botType": "crm",
+      "category": "Ticket Reports",
+      "question": "Show pending support tickets.",
+      "answer": "Lists all Open, In Progress, and Pending support tickets with SLA hours remaining and status/category charts.",
+      "intent": "crm_data_query",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-059",
+      "botType": "crm",
+      "category": "Ticket Reports",
+      "question": "How many High priority tickets are open?",
+      "answer": "Filters unresolved tickets by High priority and remaining SLA window.",
+      "intent": "crm_data_query",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-060",
+      "botType": "crm",
+      "category": "Ticket Reports",
+      "question": "Show tickets by category.",
+      "answer": "Breaks down support tickets across Hardware Telemetry, Billing & AMC, ESG Reporting, and Portal Access.",
+      "intent": "crm_data_query",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-061",
+      "botType": "crm",
+      "category": "Ticket SOP",
+      "question": "What is the first-response SLA for High priority tickets?",
+      "answer": "High priority tickets (e.g., plant gateway telemetry outage) require acknowledgment within 2 hours and engineering triage within 4 hours.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-062",
+      "botType": "crm",
+      "category": "Ticket SOP",
+      "question": "What is the SLA for Medium and Low priority tickets?",
+      "answer": "Medium priority tickets have a 12-hour response SLA; Low priority access or informational tickets have a 24-hour SLA.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-063",
+      "botType": "crm",
+      "category": "Ticket SOP",
+      "question": "How are Hardware Telemetry tickets diagnosed?",
+      "answer": "Check gateway heartbeat timestamp, RS-485 Modbus wiring status, and GSM/Wi-Fi signal strength before dispatching a field engineer.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-064",
+      "botType": "crm",
+      "category": "Ticket SOP",
+      "question": "Who handles Billing & AMC tickets?",
+      "answer": "Billing & AMC tickets are routed to the Finance & AMC desk with NMD Pvt Ltd billing reference attached.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-065",
+      "botType": "crm",
+      "category": "Ticket SOP",
+      "question": "When can a ticket be marked Resolved?",
+      "answer": "Only after root cause verification and explicit confirmation from the customer contact or 48 hours of verified stable telemetry.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-066",
+      "botType": "crm",
+      "category": "Ticket SOP",
+      "question": "What does Pending ticket status mean?",
+      "answer": "Pending means the support team has responded and is awaiting customer input, logs, or site access confirmation.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-067",
+      "botType": "crm",
+      "category": "Ticket SOP",
+      "question": "How do Website Bot escalations enter the queue?",
+      "answer": "When Bot 1 cannot answer from approved docs, it offers Call/WhatsApp support and logs an escalation record in the Super Admin Escalation Management queue.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-068",
+      "botType": "crm",
+      "category": "Ticket SOP",
+      "question": "What are the official support channels for escalations?",
+      "answer": "Phone: +91 8830498811, WhatsApp: +91 8830498811, Email: nmdpvtltd@gmail.com (NMD Pvt Ltd Pune Support).",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-069",
+      "botType": "crm",
+      "category": "Ticket SOP",
+      "question": "How do we handle Portal Access requests?",
+      "answer": "Verify customer domain authorization, confirm role scope (never grant admin access to external visitors), and provision via Google SSO.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-070",
+      "botType": "crm",
+      "category": "Ticket SOP",
+      "question": "Are resolved tickets included in SLA breach reports?",
+      "answer": "Resolved tickets remain in historical SLA compliance reporting for monthly management audits.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-071",
+      "botType": "crm",
+      "category": "Ticket SOP",
+      "question": "Can Bot 2 close support tickets via chat?",
+      "answer": "No. Bot 2 is strictly read-only and cannot alter ticket status or SLA timers.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-072",
+      "botType": "crm",
+      "category": "Ticket SOP",
+      "question": "What information is required when escalating to engineering?",
+      "answer": "Customer ID, EM-100 serial number, error timestamp, screenshot/log snippet, and remaining SLA hours.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-073",
+      "botType": "crm",
+      "category": "Ticket SOP",
+      "question": "How often is ticket backlog reviewed?",
+      "answer": "CRM Admins review all Open and In Progress tickets daily at 10:00 AM IST.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-074",
+      "botType": "crm",
+      "category": "Ticket SOP",
+      "question": "What happens if a ticket approaches < 4 hours SLA?",
+      "answer": "It is flagged urgent in the CRM Ticket Desk and escalated to the on-call technical lead.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-075",
+      "botType": "crm",
+      "category": "Ticket SOP",
+      "question": "Where can employees check open tickets without modifying them?",
+      "answer": "Use either the CRM AI Chatbot (\"Show pending support tickets\") or CRM Data Explorer > Support Tickets.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-076",
+      "botType": "crm",
+      "category": "Reporting & Analytics",
+      "question": "Generate a monthly performance report.",
+      "answer": "Synthesizes current-month leads, customer acquisitions, won pipeline value, open tickets, and 3-month trend charts.",
+      "intent": "crm_data_query",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-077",
+      "botType": "crm",
+      "category": "CRM Governance",
+      "question": "What roles exist in the Sustain & Save platform?",
+      "answer": "Four roles: SUPER_ADMIN (full platform control), CRM_ADMIN (CRM bot, training, reports), CRM_EMPLOYEE (CRM chat & scoped read-only data), and WEBSITE_VISITOR (public bot only).",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-078",
+      "botType": "crm",
+      "category": "CRM Governance",
+      "question": "Can a user assign themselves CRM_ADMIN or SUPER_ADMIN?",
+      "answer": "No. Firestore Security Rules strictly block self-assignment of privileged roles. Only a Super Admin can promote users.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-079",
+      "botType": "crm",
+      "category": "CRM Governance",
+      "question": "How is CRM data protected from public website visitors?",
+      "answer": "All CRM API endpoints require a verified Firebase ID token and server-side RBAC check, and Website Bot has zero access to CRM data or CRM knowledge.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-080",
+      "botType": "crm",
+      "category": "CRM Governance",
+      "question": "Why does the CRM bot refuse delete or update commands?",
+      "answer": "By design and security policy, Bot 2 uses read-only data access so AI prompts can never corrupt or erase production CRM records.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-081",
+      "botType": "crm",
+      "category": "CRM Governance",
+      "question": "Does the AI ever invent CRM numbers or chart figures?",
+      "answer": "Never. All counts, INR sums, percentages, and Recharts series are computed deterministically from the CRM data provider before Gemini summarizes them.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-082",
+      "botType": "crm",
+      "category": "CRM Governance",
+      "question": "How does RAG work for CRM documents?",
+      "answer": "Uploaded PDF, DOCX, and TXT files are extracted, split into overlapping chunks, embedded with Gemini Embedding 2, and retrieved by similarity before generating answers.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-083",
+      "botType": "crm",
+      "category": "CRM Governance",
+      "question": "Do Website Bot and CRM Bot share the same knowledge base?",
+      "answer": "No. Website Bot uses /website_knowledge_base and CRM Bot uses /crm_knowledge_base. Their indexes never mix.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-084",
+      "botType": "crm",
+      "category": "CRM Governance",
+      "question": "How do administrators add new training questions?",
+      "answer": "Go to Super Admin Dashboard > Q&A Training, select Bot 1 or Bot 2, enter the approved question, answer, and category, or bulk-import JSON/CSV.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-085",
+      "botType": "crm",
+      "category": "CRM Governance",
+      "question": "Does the chatbot automatically learn from unverified user chats?",
+      "answer": "No. Unverified conversations never enter the training set automatically; only administrator-approved Q&A records and documents are indexed.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-086",
+      "botType": "crm",
+      "category": "CRM Governance",
+      "question": "What happens when the CRM bot does not know an answer?",
+      "answer": "It refuses to guess and offers Smart Escalation buttons (Call / WhatsApp / Email Support) while logging the unanswered query.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-087",
+      "botType": "crm",
+      "category": "CRM Governance",
+      "question": "Where are all chatbot conversations archived?",
+      "answer": "Website conversations are stored in /website_conversations and CRM conversations in /crm_conversations with message subcollections and timestamps.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-088",
+      "botType": "crm",
+      "category": "CRM Governance",
+      "question": "Can admins review unanswered questions?",
+      "answer": "Yes, the Escalation Management and Chat History views highlight unanswered and escalated threads for review.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-089",
+      "botType": "crm",
+      "category": "CRM Governance",
+      "question": "What AI model powers both chatbots?",
+      "answer": "Both bots run on Google Gemini Flash (gemini-4-hydrogen) via secure server-side API calls, with configurable temperature and length.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-090",
+      "botType": "crm",
+      "category": "CRM Governance",
+      "question": "Are Gemini API keys stored in the browser?",
+      "answer": "Never. All @google/genai calls execute strictly on the Express backend using process.env.GEMINI_API_KEY.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-091",
+      "botType": "crm",
+      "category": "CRM Governance",
+      "question": "What is included in the Annual Maintenance (AMC)?",
+      "answer": "Per Quotation NMD/QT/2026/103, AMC covers adding new website/CRM content, training bots with new questions, and ongoing model/platform maintenance.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-092",
+      "botType": "crm",
+      "category": "CRM Governance",
+      "question": "What are the commercial pricing terms in Quotation NMD/QT/2026/103?",
+      "answer": "First Year Total: ₹69,998 (₹23,998 one-time development & training for 2 bots + ₹30,000 AI usage for 1M tokens/bot + ₹16,000 AMC). Yearly renewal from Year 2: ₹46,000.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-093",
+      "botType": "crm",
+      "category": "CRM Governance",
+      "question": "How do I deactivate an outdated SOP document?",
+      "answer": "In Super Admin Dashboard > CRM Knowledge Base, toggle the document status to Inactive so it is immediately excluded from RAG retrieval.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-094",
+      "botType": "crm",
+      "category": "CRM Governance",
+      "question": "How are prompt injection attacks prevented?",
+      "answer": "User inputs are sanitized, untrusted text is wrapped in strict data delimiters, and system prompts forbid overriding read-only or knowledge-isolation rules.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-095",
+      "botType": "crm",
+      "category": "CRM Governance",
+      "question": "What file formats are supported for Document Training?",
+      "answer": "PDF (.pdf), Word (.docx), Plain Text/Markdown (.txt, .md), and direct custom text entry.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-096",
+      "botType": "crm",
+      "category": "CRM Governance",
+      "question": "How do I audit changes made by administrators?",
+      "answer": "Open Audit Logs in the Admin Dashboard to review timestamped actions such as role updates, bot config edits, and document uploads.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-097",
+      "botType": "crm",
+      "category": "CRM Governance",
+      "question": "Can Website Bot settings affect CRM Bot?",
+      "answer": "No. Bot 1 and Bot 2 have independent configuration documents under /bot_settings/website and /bot_settings/crm.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-098",
+      "botType": "crm",
+      "category": "CRM Governance",
+      "question": "How do we switch from Demo CRM data to Production CRM?",
+      "answer": "Connect a read-only database user in the backend CRM provider and switch crmDataMode in CRM Bot Configuration once verified.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-099",
+      "botType": "crm",
+      "category": "CRM Governance",
+      "question": "Where is NMD Pvt Ltd Head Office located?",
+      "answer": "Office No.11, Second Floor, NMD PVT LTD, Aditya Centeegra, Fergusson College Rd, Shivajinagar, Pune, Maharashtra 411004.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "crm-qa-100",
+      "botType": "crm",
+      "category": "CRM Governance",
+      "question": "Where is NMD Pvt Ltd Branch Office located?",
+      "answer": "Office No.202, Mantri House, Fergusson College Rd, Shivajinagar, Pune, Maharashtra 411005.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "web-qa-001",
+      "botType": "website",
+      "category": "Company & Support",
+      "question": "What does Sustain & Save do?",
+      "answer": "Sustain & Save provides industrial energy monitoring (EM-100 hardware), solar & power-quality audits, sustainable packaging advisory, and automated ESG / Scope 2 reporting for commercial and manufacturing enterprises.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "web-qa-002",
+      "botType": "website",
+      "category": "Products & Pricing",
+      "question": "What plans do you offer?",
+      "answer": "We offer three core programs: Starter Energy Audit (from ₹69,998/yr), Growth Sustainability with multi-meter telemetry (from ₹1,25,000/yr), and Enterprise Net-Zero with ISO 14001/BRSR reporting (from ₹2,40,000/yr).",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "web-qa-003",
+      "botType": "website",
+      "category": "AI Solution & Quotation",
+      "question": "How can I contact support or NMD Pvt Ltd?",
+      "answer": "You can call us at +91 8830498811, message us on WhatsApp (+91 8830498811), or email nmdpvtltd@gmail.com. Our Pune Head Office is at Office No.11, Second Floor, NMD PVT LTD, Aditya Centeegra, Fergusson College Rd, Shivajinagar, Pune 411004.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "web-qa-004",
+      "botType": "website",
+      "category": "Policies & SLA",
+      "question": "What is your support SLA and hardware warranty?",
+      "answer": "EM-100 energy monitors carry a 24-month warranty. High-priority telemetry tickets receive a 2-hour first response, and standard onboarding completes within 7 business days.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "id": "web-qa-005",
+      "botType": "website",
+      "category": "Products & Pricing",
+      "question": "How much energy savings do Sustain & Save clients typically achieve?",
+      "answer": "Across audited industrial facilities, Sustain & Save clients typically achieve 12% to 18% kWh energy reduction within the first 6 months through peak-load balancing and power-factor correction.",
+      "active": true,
+      "createdBy": "system-seed",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    }
+  ],
+  "conversations": [
+    {
+      "id": "web-1795548856614",
+      "ownerId": "web-1795548856614",
+      "ownerLabel": "Public Website Visitor",
+      "botType": "website",
+      "title": "What is Scope 2 carbon reporting and why does it matter?",
+      "status": "active",
+      "unansweredCount": 0,
+      "messageCount": 2,
+      "lastMessagePreview": "Scope 2 carbon emissions refer to the indirect greenhouse gas emissions associated with the purchase of electricity, steam, heating, or cool",
+      "createdAt": "2026-11-24T19:34:37.127Z",
+      "updatedAt": "2026-11-24T19:34:37.127Z",
+      "messages": [
+        {
+          "id": "u-1795548877127",
+          "conversationId": "web-1795548856614",
+          "botType": "website",
+          "sender": "user",
+          "text": "What is Scope 2 carbon reporting and why does it matter?",
+          "timestamp": "2026-11-24T19:34:37.127Z",
+          "feedback": "none"
+        },
+        {
+          "id": "a-1795548877128",
+          "conversationId": "web-1795548856614",
+          "botType": "website",
+          "sender": "assistant",
+          "text": "Scope 2 carbon emissions refer to the indirect greenhouse gas emissions associated with the purchase of electricity, steam, heating, or cooling consumed by an organization. Essentially, while you aren't burning the fuel yourself, you are responsible for the emissions generated by the power plants that produce the energy you use.\n\nTracking Scope 2 emissions is critical for several reasons:\n\n1. **ESG & Regulatory Compliance:** Many industries are now required to provide BRSR (Business Responsibility and Sustainability Reporting) and comply with ISO 14001 standards. \n2. **Operational Efficiency:** Understanding your consumption patterns helps identify energy waste, leading to direct cost savings.\n3. **Corporate Responsibility:** Accurate reporting demonstrates your commitment to sustainability to stakeholders and customers.\n\nAt Sustain & Save, we automate this process with our Enterprise Net-Zero plan, which provides plant-wide IoT metering and audit-ready PDF exports to simplify your compliance reporting.",
+          "timestamp": "2026-11-24T19:34:37.127Z",
+          "escalated": false,
+          "sourceRefs": [
+            "Sustain & Save Company Profile & Offerings",
+            "Support Policy, SLA & NMD Pvt Ltd Contact Directory",
+            "Dual AI Chatbot Solution Quotation Summary (NMD/QT/2026/103)",
+            "Q&A: Company & Support",
+            "Q&A: Products & Pricing"
+          ],
+          "feedback": "none"
+        }
+      ]
+    },
+    {
+      "id": "web-1795548829046",
+      "ownerId": "web-1795548829046",
+      "ownerLabel": "Public Website Visitor",
+      "botType": "website",
+      "title": "How can a cold storage warehouse in Pune reduce its monthly electricity ",
+      "status": "escalated",
+      "unansweredCount": 1,
+      "messageCount": 2,
+      "lastMessagePreview": "Cold storage facilities can significantly reduce electricity costs by addressing energy waste and optimizing power quality. Sustain & Save o",
+      "createdAt": "2026-11-24T19:34:16.591Z",
+      "updatedAt": "2026-11-24T19:34:16.591Z",
+      "messages": [
+        {
+          "id": "u-1795548856590",
+          "conversationId": "web-1795548829046",
+          "botType": "website",
+          "sender": "user",
+          "text": "How can a cold storage warehouse in Pune reduce its monthly electricity bill?",
+          "timestamp": "2026-11-24T19:34:16.590Z",
+          "feedback": "none"
+        },
+        {
+          "id": "a-1795548856591",
+          "conversationId": "web-1795548829046",
+          "botType": "website",
+          "sender": "assistant",
+          "text": "Cold storage facilities can significantly reduce electricity costs by addressing energy waste and optimizing power quality. Sustain & Save offers tailored solutions for industrial facilities like yours:\n\n1. **Energy Monitoring:** Our **EM-100 Industrial Energy Monitor** provides real-time telemetry on kWh and peak demand, helping you identify exactly where energy is being wasted.\n2. **Audits & Optimization:** We perform professional Solar & Power-Quality Audits to assess harmonic distortion and capacitor bank tuning. On average, industrial facilities see a **12% to 18% reduction in electricity bills** within just 6 months.\n3. **Infrastructure Strategy:** Transitioning to optimized hardware and monitoring allows for better load management in high-consumption environments like cold chains.\n\nWe offer plans ranging from a **Starter Energy Audit** (₹69,998/year) to **Enterprise Net-Zero** solutions. Would you like to speak with our team to discuss an audit?",
+          "timestamp": "2026-11-24T19:34:16.590Z",
+          "escalated": true,
+          "sourceRefs": [
+            "Sustain & Save Company Profile & Offerings"
+          ],
+          "feedback": "none"
+        }
+      ]
+    },
+    {
+      "id": "web-1795547478161",
+      "ownerId": "web-1795547478161",
+      "ownerLabel": "Public Website Visitor",
+      "botType": "website",
+      "title": "What is the weather forecast in Tokyo next Friday?",
+      "status": "escalated",
+      "unansweredCount": 1,
+      "messageCount": 2,
+      "lastMessagePreview": "I don't have information about the weather forecast in Tokyo, as I can only assist with Sustain & Save's approved products, services, and po",
+      "createdAt": "2026-11-24T19:14:11.349Z",
+      "updatedAt": "2026-11-24T19:14:11.349Z",
+      "messages": [
+        {
+          "id": "u-1795547651349",
+          "conversationId": "web-1795547478161",
+          "botType": "website",
+          "sender": "user",
+          "text": "What is the weather forecast in Tokyo next Friday?",
+          "timestamp": "2026-11-24T19:14:11.349Z",
+          "feedback": "none"
+        },
+        {
+          "id": "a-1795547651350",
+          "conversationId": "web-1795547478161",
+          "botType": "website",
+          "sender": "assistant",
+          "text": "I don't have information about the weather forecast in Tokyo, as I can only assist with Sustain & Save's approved products, services, and policies. I'll need to connect you with Support for further help—please use the Call or WhatsApp Support buttons to reach our team directly.",
+          "timestamp": "2026-11-24T19:14:11.349Z",
+          "escalated": true,
+          "sourceRefs": [],
+          "feedback": "none"
+        }
+      ]
+    },
+    {
+      "id": "web-1795547360754",
+      "ownerId": "web-1795547360754",
+      "ownerLabel": "Public Website Visitor",
+      "botType": "website",
+      "title": "How can I contact NMD Pvt Ltd support?",
+      "status": "active",
+      "unansweredCount": 0,
+      "messageCount": 2,
+      "lastMessagePreview": "You can contact NMD Pvt Ltd support through the following channels:\n\n*   **Phone/Call Support:** +91 8830498811\n*   **WhatsApp Support:** +9",
+      "createdAt": "2026-11-24T19:11:18.143Z",
+      "updatedAt": "2026-11-24T19:11:18.143Z",
+      "messages": [
+        {
+          "id": "u-1795547478143",
+          "conversationId": "web-1795547360754",
+          "botType": "website",
+          "sender": "user",
+          "text": "How can I contact NMD Pvt Ltd support?",
+          "timestamp": "2026-11-24T19:11:18.143Z",
+          "feedback": "none"
+        },
+        {
+          "id": "a-1795547478144",
+          "conversationId": "web-1795547360754",
+          "botType": "website",
+          "sender": "assistant",
+          "text": "You can contact NMD Pvt Ltd support through the following channels:\n\n*   **Phone/Call Support:** +91 8830498811\n*   **WhatsApp Support:** +91 8830498811\n*   **Email:** nmdpvtltd@gmail.com\n*   **Contact Portal:** https://thedigitalnmd.com/contact\n\n**Office Locations (Pune):**\n*   **Head Office:** Office No.11, Second Floor, NMD PVT LTD, Aditya Centeegra, Fergusson College Rd, Shivajinagar, Pune, Maharashtra 411004\n*   **Branch Office:** Office No.202, Mantri House, Fergusson College Rd, Shivajinagar, Pune, Maharashtra 411005",
+          "timestamp": "2026-11-24T19:11:18.143Z",
+          "escalated": false,
+          "sourceRefs": [
+            "Support Policy, SLA & NMD Pvt Ltd Contact Directory",
+            "Dual AI Chatbot Solution Quotation Summary (NMD/QT/2026/103)",
+            "Q&A: AI Solution & Quotation"
+          ],
+          "feedback": "none"
+        }
+      ]
+    },
+    {
+      "id": "conv-web-demo-001",
+      "ownerId": "visitor-session-01",
+      "ownerLabel": "Public Website Visitor",
+      "botType": "website",
+      "title": "EM-100 pricing & warranty inquiry",
+      "status": "active",
+      "unansweredCount": 0,
+      "messageCount": 2,
+      "lastMessagePreview": "Starter Energy Audit starts at ₹69,998/year and EM-100 carries a 24-month warranty.",
+      "createdAt": "2026-11-24T07:15:00.000Z",
+      "updatedAt": "2026-11-24T07:16:00.000Z",
+      "messages": [
+        {
+          "id": "m1",
+          "conversationId": "conv-web-demo-001",
+          "botType": "website",
+          "sender": "user",
+          "text": "What is the pricing and warranty for EM-100 energy monitoring?",
+          "timestamp": "2026-11-24T07:15:00.000Z",
+          "feedback": "none"
+        },
+        {
+          "id": "m2",
+          "conversationId": "conv-web-demo-001",
+          "botType": "website",
+          "sender": "assistant",
+          "text": "Starter Energy Audit starts at ₹69,998/year (including 1 EM-100 monitor), and all EM-100 monitors carry a 24-month hardware warranty under active AMC.",
+          "timestamp": "2026-11-24T07:16:00.000Z",
+          "sourceRefs": [
+            "Sustain & Save Company Profile & Offerings"
+          ],
+          "feedback": "up"
+        }
+      ]
+    },
+    {
+      "id": "conv-crm-demo-001",
+      "ownerId": "crm-staff-seed",
+      "ownerLabel": "Aarav Kulkarni (CRM Employee)",
+      "botType": "crm",
+      "title": "Monthly lead source analysis",
+      "status": "active",
+      "unansweredCount": 0,
+      "messageCount": 2,
+      "lastMessagePreview": "[DEMO DATA] Computed 22 November 2026 leads across 6 acquisition sources.",
+      "createdAt": "2026-11-24T08:10:00.000Z",
+      "updatedAt": "2026-11-24T08:11:00.000Z",
+      "messages": [
+        {
+          "id": "m3",
+          "conversationId": "conv-crm-demo-001",
+          "botType": "crm",
+          "sender": "user",
+          "text": "Show this month's leads by source.",
+          "timestamp": "2026-11-24T08:10:00.000Z",
+          "feedback": "none"
+        },
+        {
+          "id": "m4",
+          "conversationId": "conv-crm-demo-001",
+          "botType": "crm",
+          "sender": "assistant",
+          "text": "[DEMO DATA] November 2026 recorded 22 leads across Website Chatbot, LinkedIn, Organic Search, Referral, Trade Expo, and Direct Inquiry.",
+          "timestamp": "2026-11-24T08:11:00.000Z",
+          "sourceRefs": [
+            "CRM Read-Only Lead Analytics (DEMO)"
+          ],
+          "feedback": "up",
+          "isDemoData": true
+        }
+      ]
+    }
+  ],
+  "escalations": [
+    {
+      "id": "esc-1795548856591",
+      "ownerId": "web-1795548829046",
+      "ownerLabel": "Public Website Visitor",
+      "botType": "website",
+      "conversationId": "web-1795548829046",
+      "question": "How can a cold storage warehouse in Pune reduce its monthly electricity bill?",
+      "channel": "auto",
+      "status": "open",
+      "notes": "Automatically escalated when query fell outside approved knowledge base.",
+      "createdAt": "2026-11-24T19:34:16.591Z",
+      "updatedAt": "2026-11-24T19:34:16.591Z"
+    },
+    {
+      "id": "esc-1795547651349",
+      "ownerId": "web-1795547478161",
+      "ownerLabel": "Public Website Visitor",
+      "botType": "website",
+      "conversationId": "web-1795547478161",
+      "question": "What is the weather forecast in Tokyo next Friday?",
+      "channel": "auto",
+      "status": "open",
+      "notes": "Automatically escalated when query fell outside approved knowledge base.",
+      "createdAt": "2026-11-24T19:14:11.349Z",
+      "updatedAt": "2026-11-24T19:14:11.349Z"
+    },
+    {
+      "id": "esc-001",
+      "ownerId": "visitor-session-02",
+      "ownerLabel": "Public Website Visitor",
+      "botType": "website",
+      "conversationId": "conv-web-demo-001",
+      "question": "Can Sustain & Save integrate custom Siemens S7 PLC Modbus registers for our Pune unit?",
+      "channel": "whatsapp",
+      "status": "open",
+      "notes": "Requires engineering feasibility review via NMD Pvt Ltd / Sustain & Save technical desk.",
+      "createdAt": "2026-11-24T08:30:00.000Z",
+      "updatedAt": "2026-11-24T08:30:00.000Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "audit-001",
+      "actorUid": "system-seed",
+      "actorLabel": "System Provisioner",
+      "action": "PLATFORM_INITIALIZED",
+      "target": "Sustain & Save Dual AI Platform",
+      "detail": "Seeded isolated Website & CRM Knowledge Bases, 100 CRM Q&A training set, and NMD Pvt Ltd support channels.",
+      "createdAt": "2026-11-24T09:00:00.000Z"
+    }
+  ],
+  "users": [
+    {
+      "uid": "super-admin-primary",
+      "displayName": "Prachia Mahajan",
+      "email": "prachiamahajan192008@gmail.com",
+      "role": "SUPER_ADMIN",
+      "department": "Executive & AI Governance",
+      "status": "active",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "uid": "nmd-crm-admin",
+      "displayName": "NMD Support Lead",
+      "email": "nmdpvtltd@gmail.com",
+      "role": "CRM_ADMIN",
+      "department": "CRM Operations",
+      "status": "active",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    },
+    {
+      "uid": "crm-emp-aarav",
+      "displayName": "Aarav Kulkarni",
+      "email": "aarav.k@sustainandsave.demo",
+      "role": "CRM_EMPLOYEE",
+      "department": "Enterprise Sales",
+      "status": "active",
+      "createdAt": "2026-11-24T09:00:00.000Z",
+      "updatedAt": "2026-11-24T09:00:00.000Z"
+    }
+  ],
+  "usage": {
+    "websiteTokens": 24677,
+    "crmTokens": 24910,
+    "websiteRequests": 46,
+    "crmRequests": 38,
+    "dailySeries": [
+      {
+        "date": "Nov 19",
+        "website": 14,
+        "crm": 9
+      },
+      {
+        "date": "Nov 20",
+        "website": 18,
+        "crm": 12
+      },
+      {
+        "date": "Nov 21",
+        "website": 22,
+        "crm": 15
+      },
+      {
+        "date": "Nov 22",
+        "website": 19,
+        "crm": 18
+      },
+      {
+        "date": "Nov 23",
+        "website": 27,
+        "crm": 21
+      },
+      {
+        "date": "Nov 24",
+        "website": 35,
+        "crm": 24
+      }
+    ],
+    "topQuestions": [
+      {
+        "question": "What is Scope 2 carbon reporting and why does it matter?",
+        "botType": "website",
+        "count": 1
+      },
+      {
+        "question": "How can a cold storage warehouse in Pune reduce its monthly electricity bill?",
+        "botType": "website",
+        "count": 1
+      },
+      {
+        "question": "What is the weather forecast in Tokyo next Friday?",
+        "botType": "website",
+        "count": 1
+      },
+      {
+        "question": "Show this month's leads by source.",
+        "botType": "crm",
+        "count": 14
+      },
+      {
+        "question": "What plans do you offer?",
+        "botType": "website",
+        "count": 19
+      },
+      {
+        "question": "Show pending support tickets.",
+        "botType": "crm",
+        "count": 11
+      },
+      {
+        "question": "How can I contact NMD Pvt Ltd support?",
+        "botType": "website",
+        "count": 13
+      }
+    ]
+  }
+}

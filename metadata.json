@@ -1,0 +1,6 @@
+{
+  "name": "Sustain & Save — Dual AI Chatbot Platform",
+  "description": "Enterprise Website & CRM Dual AI Chatbot Platform built for Sustain & Save by NMD Pvt Ltd, powered by Google Gemini, Firestore, RAG knowledge bases, and read-only CRM analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
