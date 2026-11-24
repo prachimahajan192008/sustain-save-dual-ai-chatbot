@@ -146,7 +146,6 @@ GEMINI_API_KEY=your_gemini_api_key
 APP_URL=http://localhost:3000
 ```
 
-Never upload your actual API key to GitHub.
 
 ### Step 5: Configure Firebase
 
